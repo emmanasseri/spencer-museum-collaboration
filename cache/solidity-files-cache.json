@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/emmanasseri/Desktop/spencer-museum-collaboration/contracts/mint.sol": {
+      "lastModificationDate": 1680219033066,
+      "contentHash": "44261d209c26eb0b8aa89eba2da6d7d5",
+      "sourceName": "contracts/mint.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PaperWalletGenerator"
+      ]
+    }
+  }
+}
