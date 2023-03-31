@@ -1,9 +1,6 @@
-
-
-
-
-
-
+/* eslint-disable */
+import React from "react";
+import { ethers} from 'ethers';
 
 function Assign() {
   return(

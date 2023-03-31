@@ -10,13 +10,16 @@ function MintingSection() {
   const [publicKeys, setPublicKeys] = useState([]);
 
   async function generateWallets() {
+    console.log("Generating wallets...");
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
     const contract = new ethers.Contract(PaperWalletGenerator.address, PaperWalletGenerator.abi, signer);
-
+    console.log("Contract: ", contract);
     const [pKeys, pubKeys] = await contract.generateWallets();
     setPrivateKeys(pKeys);
     setPublicKeys(pubKeys);
+    console.log("Public Keys: ", pubKeys);
+    console.log("Private Keys: ", pKeys);
   }
 
   return (
